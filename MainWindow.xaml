@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920" ResizeMode="CanMinimize" WindowState="Maximized">
+    <GroupBox x:Name="ImagesGroupBox" Margin="0,0,0,0">
+        <ItemsControl x:Name="ImagesItemsControl" Margin="0,0,0,0">
+            <Grid x:Name="ImagesGrid" Margin="0,0,0,0" Height="1080">
+                <Image x:Name="character" Margin="880,10,0,130" Source="references/character.png" Stretch="Uniform"/>
+                <Image x:Name="shorts_stripes" Margin="50,270,1300,455" Source="references/shorts_stripes.png" Stretch="Uniform" MouseDown="shorts_stripes_MouseDown"/>
+                <Image x:Name="shorts_short" Margin="250,270,1093,470" Source="references/shorts_short.png" Stretch="Uniform" MouseDown="shorts_short_MouseDown"/>
+                <Image x:Name="skirt" Margin="430,300,910,440" Source="references/skirt.png" Stretch="Uniform" MouseDown="skirt_MouseDown"/>
+                <Image x:Name="shorts_long" Margin="600,-110,695,0" Source="references/shorts_long.png" Stretch="Uniform" MouseDown="shorts_long_MouseDown"/>
+            </Grid>
+        </ItemsControl>
+    </GroupBox>
+
+
+</Window>

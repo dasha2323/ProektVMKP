@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\C#\\WinFormsApp1\\WinFormsApp1.csproj",
-      "projectName": "WinFormsApp1",
-      "projectPath": "D:\\Projects\\C#\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectUniqueName": "C:\\Users\\7mishar\\Desktop\\my-project\\WpfApp1.csproj",
+      "projectName": "WpfApp1",
+      "projectPath": "C:\\Users\\7mishar\\Desktop\\my-project\\WpfApp1.csproj",
       "packagesPath": "C:\\Users\\7mishar\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\C#\\WinFormsApp1\\obj\\",
+      "outputPath": "C:\\Users\\7mishar\\Desktop\\my-project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\7mishar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,7 +65,7 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
+          "Microsoft.WindowsDesktop.App.WPF": {
             "privateAssets": "none"
           }
         },
