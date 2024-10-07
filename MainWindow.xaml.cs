@@ -11,86 +11,87 @@ using System.Windows.Shapes;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-
-    ///shotrs stripes  Magrin = 1155,-195,200,0 (+)    50,270,1300,455  (-)
-    ///shorts short    Margin = 1150,-200,193,0 (+)    250,270,1093,470 (-)
-    ///skirt           Margin = 1115,-140,195,0 (+)    430,300,910,440  (-)
-    ///shorts long     Margin = 1100,-110,195,0 (+)    600,-110,695,0   (-)
-
-
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Interaction logic for MainWindow.xaml
+        /// </summary>
+        
         public MainWindow()
         {
             InitializeComponent();
         }
-        static bool weared_on_legs = false;
         private void shorts_stripes_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (!weared_on_legs)
+            if (!Character.weared_on_legs) //поменять координаты в Character.cs
             {
-                shorts_stripes.Margin = new Thickness(1150, -195, 195, 0);
-                weared_on_legs |= true;
+                shorts_stripes.Margin = Character.shorts_stripes_on;
+                Character.weared_on_legs = true;
+                Character.shorts_stripes_weared = true;
             }
             else
             {
-                if (shorts_stripes.Margin == new Thickness(1150, -195, 195, 0))
+                if (Character.shorts_stripes_weared)
                 {
-                    shorts_stripes.Margin = new Thickness(50, 270, 1300, 455);
-                    weared_on_legs = false;
+                    shorts_stripes.Margin = Character.shorts_stripes_off;
+                    Character.weared_on_legs = false;
+                    Character.shorts_stripes_weared = false;
                 }
             }
         }
         private void shorts_short_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (!weared_on_legs)
+            if(!Character.weared_on_legs)
             {
-                shorts_short.Margin = new Thickness(1148, -200, 187, 0);
-                weared_on_legs = true;
+                shorts_short.Margin = Character.shorts_short_on;
+                Character.weared_on_legs = true;
+                Character.shorts_short_weared = true;
             }
             else
             {
-                if (shorts_short.Margin == new Thickness(1148, -200, 187, 0))
+                if (Character.shorts_short_weared)
                 {
-                    shorts_short.Margin = new Thickness(250, 270, 1093, 470);
-                    weared_on_legs = false;
-                }
-            }
-        }
-        private void skirt_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (!weared_on_legs)
-            {
-                skirt.Margin = new Thickness(1115, -140, 195, 0);
-                weared_on_legs = true;
-            }
-            else
-            {
-                if (skirt.Margin == new Thickness(1115, -140, 195, 0))
-                {
-                    skirt.Margin = new Thickness(430, 300, 910, 440);
-                    weared_on_legs = false;
+                    shorts_short.Margin = Character.shorts_short_off;
+                    Character.weared_on_legs = false;
+                    Character.shorts_short_weared = false;
                 }
             }
         }
         private void shorts_long_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (!weared_on_legs)
+            if (!Character.weared_on_legs)
             {
-                shorts_long.Margin = new Thickness(1100, -110, 195, 0);
-                weared_on_legs = true;
+                shorts_long.Margin = Character.shorts_long_on;
+                Character.weared_on_legs = true;
+                Character.shorts_long_weared = true;
             }
             else
             {
-                if (shorts_long.Margin == new Thickness(1100, -110, 195, 0))
+                if (Character.shorts_long_weared)
                 {
-                    shorts_long.Margin = new Thickness(600, -110, 695, 0);
-                    weared_on_legs = false;
+                    shorts_long.Margin = Character.shorts_long_off;
+                    Character.weared_on_legs = false;
+                    Character.shorts_long_weared = false;
                 }
             }
         }
+        private void skirt_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (!Character.weared_on_legs)
+            {
+                skirt.Margin = Character.skirt_on;
+                Character.weared_on_legs = true;
+                Character.skirt_weared = true;
+            }
+            else
+            {
+                if (Character.skirt_weared)
+                {
+                    skirt.Margin = Character.skirt_off;
+                    Character.weared_on_legs = false;
+                    Character.skirt_weared = false;
+                }
+            }
         }
+    }
 }
