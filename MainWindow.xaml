@@ -5,16 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1920" ResizeMode="CanMinimize" WindowState="Maximized">
-    <GroupBox x:Name="ImagesGroupBox" Margin="0,0,0,0">
-        <ItemsControl x:Name="ImagesItemsControl" Margin="0,0,0,0">
-            <Grid x:Name="ImagesGrid" Margin="0,0,0,0" Height="1080">
-                <Image x:Name="character" Margin="900,20,0,180" Source="references/character.png" Stretch="Uniform"/>
-                <Image x:Name="shorts_stripes" Margin="50,270,1300,455" Source="references/shorts_stripes.png" Stretch="Uniform" MouseDown="shorts_stripes_MouseDown"/>
-                <Image x:Name="shorts_short" Margin="250,270,1093,470" Source="references/shorts_short.png" Stretch="Uniform" MouseDown="shorts_short_MouseDown"/>
-                <Image x:Name="skirt" Margin="430,300,910,440" Source="references/skirt.png" Stretch="Uniform" MouseDown="skirt_MouseDown"/>
-                <Image x:Name="shorts_long" Margin="600,-110,695,0" Source="references/shorts_long.png" Stretch="Uniform" MouseDown="shorts_long_MouseDown"/>
-            </Grid>
-        </ItemsControl>
-    </GroupBox>
+        Title="MainWindow" Height="1080" Width="1920" ResizeMode="CanResize" WindowState="Normal" SizeChanged="Window_SizeChanged">
+    <Canvas x:Name="myCanvas" >
+        <Image x:Name="character"  Width="{Binding ActualWidth, ElementName=myCanvas}" Height="{Binding ActualHeight, ElementName=myCanvas}" Source="references/character.png" Stretch="Uniform"/>
+        <Image x:Name="shorts_stripes" Height="155" Width="203" Source="references/shorts_stripes.png" Stretch="Uniform" Canvas.Left="10" Canvas.Top="455" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image x:Name="shorts_short" Height="179" Width="218" Source="references/shorts_short.png" Stretch="Uniform" Canvas.Left="112" Canvas.Top="451"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image x:Name="shorts_long" Height="257" Width="273" Source="references/shorts_long.png" Stretch="Uniform" Canvas.Left="188" Canvas.Top="451" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Image x:Name="skirt" Height="242" Width="260" Source="references/skirt.png" Stretch="Uniform" Canvas.Left="335" Canvas.Top="451" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
 </Window>
