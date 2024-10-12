@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1920" ResizeMode="CanResize" WindowState="Normal" SizeChanged="Window_SizeChanged">
+        Title="MainWindow" Height="1080" Width="1920" ResizeMode="CanMinimize" WindowState="Maximized" SizeChanged="Window_SizeChanged">
     <Canvas x:Name="myCanvas" >
-        <Image x:Name="character"  Width="{Binding ActualWidth, ElementName=myCanvas}" Height="{Binding ActualHeight, ElementName=myCanvas}" Source="references/character.png" Stretch="Uniform"/>
-        <Image x:Name="shorts_stripes" Height="155" Width="203" Source="references/shorts_stripes.png" Stretch="Uniform" Canvas.Left="10" Canvas.Top="455" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Image x:Name="shorts_short" Height="179" Width="218" Source="references/shorts_short.png" Stretch="Uniform" Canvas.Left="112" Canvas.Top="451"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Image x:Name="shorts_long" Height="257" Width="273" Source="references/shorts_long.png" Stretch="Uniform" Canvas.Left="188" Canvas.Top="451" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Image x:Name="skirt" Height="242" Width="260" Source="references/skirt.png" Stretch="Uniform" Canvas.Left="335" Canvas.Top="451" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Image x:Name="character"  Width="746" Height="1054" Source="references/character.png" Stretch="Uniform" HorizontalAlignment="Center" Canvas.Top="3" VerticalAlignment="Top" Canvas.Left="587"/>
+        <Image x:Name="shorts_stripes" Height="155" Width="203" Source="references/shorts_stripes.png" Stretch="Uniform" Canvas.Left="10" Canvas.Top="455" HorizontalAlignment="Left" VerticalAlignment="Top" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove"/>
+        <Image x:Name="shorts_short" Height="179" Width="218" Source="references/shorts_short.png" Stretch="Uniform" Canvas.Left="112" Canvas.Top="451"  HorizontalAlignment="Left" VerticalAlignment="Top" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove"/>
+        <Image x:Name="shorts_long" Height="257" Width="273" Source="references/shorts_long.png" Stretch="Uniform" Canvas.Left="188" Canvas.Top="451" HorizontalAlignment="Left" VerticalAlignment="Center" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove"/>
+        <Image x:Name="skirt" Height="242" Width="260" Source="references/skirt.png" Stretch="Uniform" Canvas.Left="335" Canvas.Top="451" HorizontalAlignment="Left" VerticalAlignment="Center" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove"/>
     </Canvas>
 </Window>
