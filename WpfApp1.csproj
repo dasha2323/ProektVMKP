@@ -15,6 +15,7 @@
     <None Remove="references\shorts_short.PNG" />
     <None Remove="references\shorts_stripes.PNG" />
     <None Remove="references\skirt.PNG" />
+    <None Remove="references\T-shirt average.PNG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +24,7 @@
     <Resource Include="references\shorts_short.PNG" />
     <Resource Include="references\shorts_stripes.PNG" />
     <Resource Include="references\skirt.PNG" />
+    <Resource Include="references\T-shirt average.PNG" />
   </ItemGroup>
 
 </Project>

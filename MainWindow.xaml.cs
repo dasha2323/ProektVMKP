@@ -60,19 +60,22 @@ namespace WpfApp1
 
 
         private bool _isMoving;
-        private double offsetX;
-        private double offsetY;
+        private double _offsetX;
+        private double _offsetY;
         private void MouseDown(object sender, MouseButtonEventArgs e)
         {
             _isMoving = true;
             var image =  sender as Image;
-            offsetX = Mouse.GetPosition(this).X - Canvas.GetLeft(image);
-            offsetY = Mouse.GetPosition(this).Y - Canvas.GetTop(image);
+            image.SetValue(Canvas.ZIndexProperty, 2);
+            _offsetX = Mouse.GetPosition(this).X - Canvas.GetLeft(image);
+            _offsetY = Mouse.GetPosition(this).Y - Canvas.GetTop(image);
         }
 
         private void MouseUp(object sender, MouseButtonEventArgs e)
         {
             _isMoving = false;
+            var image = sender as Image;
+            image.SetValue(Canvas.ZIndexProperty, 1);
         }
 
         private void MouseMove(object sender, MouseEventArgs e)
@@ -81,8 +84,8 @@ namespace WpfApp1
             var image = sender as Image;
             if (image != null)
             {
-                Canvas.SetLeft(image, Mouse.GetPosition(this).X - offsetX);
-                Canvas.SetTop(image, Mouse.GetPosition(this).Y - offsetY);
+                Canvas.SetLeft(image, Mouse.GetPosition(this).X - _offsetX);
+                Canvas.SetTop(image, Mouse.GetPosition(this).Y - _offsetY);
             }
         }
 
