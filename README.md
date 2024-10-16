@@ -1,4 +1,4 @@
-# FIND THE LOOK!:smiley:
+# FIND THE LOOK! :smiley:
 
 Welcome to the **ProektVMKP** project. Here you can experiment with a variety of styles and outfits for your character. Create unique looks, share them with friends, and find inspiration for your own style!
 
