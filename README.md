@@ -5,7 +5,7 @@ Welcome to the **ProektVMKP** project. Here you can experiment with a variety of
 ## Getting Started :eyes:
 
 1. Clone the repository.
-2. Open the project in VS Code.
+2. Open the project in Visual Studio.
 3. Start experimenting with outfits and styles!
 
 ## Features :pencil:
