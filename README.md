@@ -15,5 +15,5 @@ Welcome to the **ProektVMKP** project. Here you can experiment with a variety of
 - Ability to save and share your creations
 :mailbox: 
 
-![krasivo]([https://images.app.goo.gl/TWAF25LgRAtGw2ZS7](https://img.freepik.com/free-vector/computer-with-keyboard-icon-3d-style-colorful-realistic-pc-with-blank-monitor-white-background-flat-vector-illustration-cyberspace-internet-device-gadget-technology-concept_778687-1035.jpg?t=st=1729082799~exp=1729086399~hmac=dfda120bf32221a842979bdb9d1f75a3af6140a247598057332635adfdcfffc0&w=740))
+![krasivo](https://pfst.cf2.poecdn.net/base/image/7840848fb9cbabe251be319c8de0835640cb6a5c2089a5899ad85a2d94556c64?w=6000&h=4000&pmaid=179098298)
 
