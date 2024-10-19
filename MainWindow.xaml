@@ -9,11 +9,11 @@
         Width="1920" Height="1080"
         RenderSize="1920,1080">
     <Canvas x:Name="myCanvas" Height="1080" Width="1920">
-        <Image x:Name="character" Panel.ZIndex="0" Width="746" Height="1054" Canvas.Top="3" Canvas.Left="587" Source="references/character.png" Stretch="Uniform"/>
-        <Image x:Name="shorts_stripes" Panel.ZIndex="1" Height="155" Width="203" Source="references/shorts_stripes.png" Stretch="Uniform" Canvas.Left="10" Canvas.Top="455" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand"/>
-        <Image x:Name="shorts_short" Panel.ZIndex="1" Height="179" Width="218" Source="references/shorts_short.png" Stretch="Uniform" Canvas.Left="112" Canvas.Top="451" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand"/>
-        <Image x:Name="shorts_long" Panel.ZIndex="1" Height="257" Width="273" Source="references/shorts_long.png" Stretch="Uniform" Canvas.Left="188" Canvas.Top="451" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand"/>
-        <Image x:Name="skirt" Panel.ZIndex="1" Height="242" Width="260" Source="references/skirt.png" Stretch="Uniform" Canvas.Left="335" Canvas.Top="451" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand"/>
-        <Image x:Name="tshirt" Panel.ZIndex="1" Height="295" Width="274" Source="/references/T-shirt average.PNG" Stretch="Uniform" Canvas.Top="163" Canvas.Left="10" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand"/>
+        <Image x:Name="character" Panel.ZIndex="0" Width="672" Height="948" Canvas.Top="66" Canvas.Left="624" Source="references/character.png" Stretch="Uniform"/>
+        <Image x:Name="shorts_stripes" Panel.ZIndex="1" Height="139" Width="182" Source="references/shorts_stripes.png" Stretch="Uniform" Canvas.Left="14" Canvas.Top="541" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand"/>
+        <Image x:Name="shorts_short" Panel.ZIndex="1" Height="161" Width="196" Source="references/shorts_short.png" Stretch="Uniform" Canvas.Left="14" Canvas.Top="674" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand"/>
+        <Image x:Name="shorts_long" Panel.ZIndex="1" Height="230" Width="245" Source="references/shorts_long.png" Stretch="Uniform" Canvas.Left="200" Canvas.Top="560" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand"/>
+        <Image x:Name="skirt" Panel.ZIndex="1" Height="218" Width="234" Source="references/skirt.png" Stretch="Uniform" Canvas.Left="420" Canvas.Top="566" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Image x:Name="tshirt" Panel.ZIndex="1" Height="265" Width="247" Source="/references/T-shirt average.PNG" Stretch="Uniform" Canvas.Top="179" MouseUp="MouseUp" MouseDown="MouseDown" MouseMove="MouseMove" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </Window>
