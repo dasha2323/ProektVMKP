@@ -39,6 +39,7 @@ namespace WpfApp1
         private bool _isMoving;
         private double _offsetX;
         private double _offsetY;
+
         private void MouseDown(object sender, MouseButtonEventArgs e)
         {
             _isMoving = true;

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="IMG_1326.PNG" />
+	<None Remove="references\background.PNG" />
     <None Remove="references\character.PNG" />
     <None Remove="references\shorts_long.PNG" />
     <None Remove="references\shorts_short.PNG" />
@@ -17,11 +18,15 @@
     <None Remove="references\skirt.PNG" />
     <None Remove="references\T-shirt average.PNG" />
 	<None Remove="references\T-shirt .PNG" />
+	<None Remove="references\Longsleeve.PNG" />
+	<None Remove="references\Office_shirt.PNG" />
 	<None Remove="references\Turtleneck .PNG" />
 	<None Remove="references\Vest.PNG" />
+	
   </ItemGroup>
 
   <ItemGroup>
+	<Resource Include="references\background.PNG" />
     <Resource Include="references\character.PNG" />
     <Resource Include="references\shorts_long.PNG" />
     <Resource Include="references\shorts_short.PNG" />
@@ -29,8 +34,10 @@
     <Resource Include="references\skirt.PNG" />
     <Resource Include="references\T-shirt average.PNG" />
 	<Resource Include="references\T-shirt .PNG" />
+	<Resource Include="references\Longsleeve.PNG" />
+	<Resource Include="references\Office_shirt.PNG" />
 	<Resource Include="references\Turtleneck .PNG" />
-	<Resource Include="references\Vest.PNG" />  
+	<Resource Include="references\Vest.PNG" />
   </ItemGroup>
 
 </Project>
